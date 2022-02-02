@@ -42,6 +42,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Implement your calculator
+
+Open [App.tsx](./src/App.tsx) and look for a function that looks like:
+
+```jsx
+function Calculator(){
+    //some JS-like code
+    return (
+        // some HTML-like code
+    )
+}
+```
+In the comments you'll clearly see an indications where you can implement your calculator.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
