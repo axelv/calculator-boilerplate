@@ -21,7 +21,7 @@ export function Calculator() {
   const { values } = useFormikContext<typeof INITIAL_VALUES>()
 
   let result = (values.a + values.b)
-  if(values.c){
+  if (values.c) {
     result = result * 2
   }
 
@@ -67,7 +67,7 @@ export function Calculator() {
 export default function App() {
   return (
     <div id="page-container" className="px-5 py-3">
-      <Formik initialValues={INITIAL_VALUES} onSubmit={(values) => console.log(values)}>
+      <Formik initialValues={INITIAL_VALUES} onSubmit={(values) => window.parent.postMessage(JSON.stringify(values), "*")}>
         <Calculator />
       </Formik>
     </div>
